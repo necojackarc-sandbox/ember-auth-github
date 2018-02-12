@@ -5,4 +5,10 @@ import config from '../config/environment';
 export default Controller.extend({
   session: service(),
   config: config.torii.providers['github-oauth2'],
+
+  actions: {
+    logout() {
+      this.get('session').invalidate();
+    },
+  }
 });

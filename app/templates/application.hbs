@@ -5,6 +5,7 @@ Authorization Code: {{session.data.authenticated.authorizationCode}} <br />
 
 {{#if session.isAuthenticated}}
   Authenticated
+  <button onclick={{action "logout"}}>Log out</button>
 {{else}}
   Unauthenticated
 {{/if}}
