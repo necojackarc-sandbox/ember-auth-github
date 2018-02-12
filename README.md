@@ -1,11 +1,9 @@
 # ember-auth-github
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A sample Ember project that uses Github OAuth with [Ember Simple Auth](https://github.com/simplabs/ember-simple-auth) and [Torii](https://github.com/Vestorly/torii).
+Everything in this project is explaind in the official document - [Full GitHub Authorization with the torii-provider](https://github.com/simplabs/ember-simple-auth/blob/master/guides/auth-torii-with-github.md)
 
 ## Prerequisites
-
-You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with npm)
@@ -17,6 +15,16 @@ You will need the following things properly installed on your computer.
 * `git clone <repository-url>` this repository
 * `cd ember-auth-github`
 * `npm install`
+
+## Configuration
+Put your .env file in the project root.
+
+```bash
+GITHUB_DEV_CLIENT_ID=<YOUR_API_KEY>
+GITHUB_DEV_CLIENT_SECRET=<YOUR CLIENT SECRET>
+GITHUB_DEV_USER_AGENT=<YOUR APPLICATION NAME>
+DEV_TOKEN_EXCHANGE_URL=http://localhost:4200/api/token
+```
 
 ## Running / Development
 
